@@ -29,16 +29,16 @@ public class Client {
             out.flush();
 
             //   получаю сообщение о возрасте
-            String serverWord1 = in.readLine();
-            System.out.println(serverWord1);
+            String serverChild = in.readLine();
+            System.out.println(serverChild);
 
             // ввод сообщения
             String answer = scanner.nextLine();
             out.write(answer + "\r\n");
             out.flush();
 
-            String serverWord2 = in.readLine();
-            System.out.println(serverWord2);
+            String serverAnswer = in.readLine();
+            System.out.println(serverAnswer);
 
         } catch (UnknownHostException e) {
             e.printStackTrace();
