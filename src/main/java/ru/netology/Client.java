@@ -26,44 +26,19 @@ public class Client {
             // ввод сообщения
             String nameClient = scanner.nextLine();
             out.write(nameClient + "\r\n");
-//            out.write("\r\n");
             out.flush();
 
             //   получаю сообщение о возрасте
-           String  serverWord1 = in.readLine();
+            String serverWord1 = in.readLine();
             System.out.println(serverWord1);
 
             // ввод сообщения
             String answer = scanner.nextLine();
             out.write(answer + "\r\n");
-//            out.write("\r\n");
             out.flush();
 
-
-
-           String serverWord2 = in.readLine();
+            String serverWord2 = in.readLine();
             System.out.println(serverWord2);
-
-            // ждём пока клиент что-нибудь
-//            System.out.println("reader posle");
-//            System.out.println(word);
-
-// не напишет в консоль
-
-//// получив - выводим на экран
-
-//            String serverWord = reader.readLine();
-//            out.println("Client enter name: " + serverWord);
-
-////
-//            serverWord = in.readLine();
-//            System.out.println(serverWord + "/n");
-//
-////            out.println("Client age: " + serverWord);
-//            nameClient = in.readLine();
-//            out.write(nameClient + "/n");
-//            out.flush();
-
 
         } catch (UnknownHostException e) {
             e.printStackTrace();
